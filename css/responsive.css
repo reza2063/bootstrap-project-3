@@ -1,0 +1,458 @@
+/*==============================
+Responsive start for Bootstrap project-3
+======================================*/
+
+
+/*===============================
+ X-Small devices (portrait phones, less than 576px)
+=======================================*/
+
+@media (max-width: 575px) { 
+	
+.hamburger-menu-conteiner{
+	display:flex;
+}
+
+#check{
+	display:block;
+}	
+
+.nav-btn{
+	 position:fixed;
+     height:100vh;
+     top: 64px;
+	 left:0;
+	 width:100%;
+	 background:#69bde7;
+	 flex-direction:column;
+	 align-items:center;
+	 justify-content:space-between;
+	 overflow-x:hidden;
+	 overflow-y:auto;
+	 transform:translateX(100%);
+	 transition:0.65s;
+}
+
+#check:checked ~ .nav-btn{
+	 transform:translateX(0);	
+}
+
+
+#check:checked ~ .nav-btn .nav-link,
+#check:checked ~ .nav-btn .log-sing{
+	 animation: animation .5s ease forwards var(--i);
+}
+
+
+.nav-links{
+	flex:initial;
+	width:100%;
+	margin-bottom: 10px;
+	margin-top: 4.2em;
+}
+
+.nav-links > ul {
+	padding-left: 0;
+    display: block;
+}
+
+		
+.log-sing{
+	flex:initial;
+	width:100%;
+    padding-bottom:80vh;
+   	opacity:0;
+	transform:translateY(15px);
+}	
+
+
+.nav-link {
+	margin:0;
+    width: 100%;
+    display: grid;
+    place-content: center;
+	opacity:0;
+	cursor:pointer;
+	transform:translateY(15px);
+}
+
+.nav-link > a{
+	line-height:1;
+	padding:1.6rem 2rem;
+}
+
+
+.nav-link:hover{
+	background:#50a9d6;
+	text-decoration:none;
+}	
+
+
+.nav-link a:hover{
+    background:none;
+	transform:none;
+	text-decoration:none;
+}
+
+
+.hero_info{
+    width:80%;
+	left: 10%;
+}
+
+
+.hero_info .m_auto{
+   width:100%;
+}
+
+.hero_bottom_info {
+    display: grid;
+}
+
+
+.px-5{
+	padding:0!important;
+}
+
+.service_text{
+    text-align: center;
+}
+
+#achieved_area {
+    height: 25vh;
+}
+
+.featured_text{
+    text-align: center;
+    padding: 1em 0;
+}
+
+.single_catagory .svg_style {
+    margin: 10px;
+    width: 10em;
+    height: max-content;
+}
+
+/*-------------------
+#header_top_area {
+    height: 10em;
+}
+
+.d_flex1{
+    display: flex;
+    place-self: center;
+}
+
+.d_flex2{
+    display: block !important;
+}
+--------------*/
+
+
+
+}
+
+
+/*=================================
+Small devices (landscape phones, less than 768px)
+=======================================*/
+
+@media ( min-width: 576px ) and (max-width: 767px ){
+	
+.hamburger-menu-conteiner{
+	display:flex;
+}
+
+#check{
+	display:block;
+}	
+
+.nav-btn{
+	 position:fixed;
+	 height:100vh;
+	 top:63px;
+	 left:0;
+	 width:100%;
+	 background:#69bde7;
+	 flex-direction:column;
+	 align-items:center;
+	 justify-content:space-between;
+	 overflow-x:hidden;
+	 overflow-y:auto;
+	 transform:translateX(100%);
+	 transition:0.65s;
+}
+
+#check:checked ~ .nav-btn{
+	 transform:translateX(0);	
+}
+
+
+#check:checked ~ .nav-btn .nav-link,
+#check:checked ~ .nav-btn .log-sing{
+	 animation: animation .5s ease forwards var(--i);
+}
+
+.nav-links{
+	flex:initial;
+	width:100%;
+	margin-bottom: 10px;
+	margin-top: 4.2em;
+}
+
+.nav-links > ul {
+	padding-left: 0;
+    display: block;
+}
+
+		
+.log-sing{
+	flex:initial;
+	width:100%;
+	padding-bottom:80vh;
+   	opacity:0;
+	transform:translateY(15px);
+}	
+
+
+.nav-link {
+	margin:0;
+    width: 100%;
+    display: grid;
+    place-content: center;
+	opacity:0;
+	cursor:pointer;
+	transform:translateY(15px);
+}
+
+.nav-link > a{
+	line-height:1;
+	padding:1.6rem 2rem;
+}
+
+
+.nav-link:hover{
+	background:#50a9d6;
+	text-decoration:none;
+}	
+
+
+.nav-link a:hover{
+    background:none;
+	transform:none;
+	text-decoration:none;
+}
+
+.hero_info {
+    top: 50%;
+    left:10%;
+}
+
+
+.hero_info{
+    width:80%;
+    padding-top:0em;
+}
+
+.w-50 {
+    width: 35% !important;
+}
+
+
+
+
+}
+
+/*=================================
+Medium devices (tablets, less than 992px)
+=======================================*/
+
+@media ( min-width: 768px) and (max-width: 992px ){
+
+	
+.hamburger-menu-conteiner{
+	display:flex;
+}
+
+#check{
+	display:block;
+}	
+
+.nav-btn{
+	 position:fixed;
+	 height:100vh;
+	 top:63px;
+	 left:0;
+	 width:100%;
+	 background:#69bde7;
+	 flex-direction:column;
+	 align-items:center;
+	 justify-content:space-between;
+	 overflow-x:hidden;
+	 overflow-y:auto;
+	 transform:translateX(100%);
+	 transition:0.65s;
+}
+
+#check:checked ~ .nav-btn{
+	 transform:translateX(0);	
+}
+
+
+#check:checked ~ .nav-btn .nav-link,
+#check:checked ~ .nav-btn .log-sing{
+	 animation: animation .5s ease forwards var(--i);
+}
+
+
+.nav-links{
+	flex:initial;
+	width:100%;
+	margin-bottom: 10px;
+	margin-top: 4.2em;
+}
+
+.nav-links > ul {
+	padding-left: 0;
+    display: block;
+}
+
+
+
+.nav-link {
+	margin:0;
+    width: 100%;
+    display: grid;
+    place-content: center;
+	opacity:0;
+	cursor:pointer;
+	transform:translateY(15px);
+}
+
+.nav-link > a{
+	line-height:1;
+	padding:1.6rem 2rem;
+}
+
+
+.nav-link:hover{
+	background:#50a9d6;
+	text-decoration:none;
+}	
+
+
+.nav-link a:hover{
+    background:none;
+	transform:none;
+	text-decoration:none;
+}
+		
+.log-sing{
+	flex:initial;
+	width:100%;
+	padding-bottom:80vh;
+   	opacity:0;
+	transform:translateY(15px);
+	
+}	
+
+
+.w-50 {
+    width: 18% !important;
+}
+
+
+
+}
+
+
+
+
+/*=================================
+Large devices (desktops, less than 1200px)
+=======================================*/
+
+@media ( min-width: 993px) and (max-width: 1199px) { 
+.nav-links {
+    width: 75%;
+}
+
+.log-sing {
+    justify-content: end;
+
+}
+
+}
+
+
+/*=================================
+X-Large devices (large desktops, less than 1400px)
+=======================================*/
+
+@media ( min-width:  1200px){ 
+.nav-links {
+    width: 100%;
+}
+
+.log-sing {
+    justify-content: end;
+
+}
+
+
+.featured_info {
+    padding: 0 12em !important;
+}
+
+#achieved_area {
+    height: 20vh;
+}
+
+.achieved_info {
+    padding-top: 1em;
+}
+
+
+
+}
+
+
+/*=================================
+  XX-Large devices (larger desktops)
+No media query since the xxl breakpoint has no upper bound on its width
+=======================================*/
+
+/*pothom a je coding korechi tai hobe
+ notun kore kichu likhte hobe na akhane
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
