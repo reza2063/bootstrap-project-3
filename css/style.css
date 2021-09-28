@@ -1,7 +1,6 @@
-
-/*==========================
+/*====
   button desing
-===================================================*/
+=================*/
 
 .btn_style {
     padding: .5em 3em;
@@ -18,10 +17,9 @@
     margin: 0 auto;
 }
 
-/*==========================
+/*====
   underline desing
-===================================================*/
-
+=====================*/
 .b_bottom span {
     width: 65px;
     height: 4px;
@@ -33,62 +31,9 @@
 	margin-bottom: 12px;
 }
 
-
-
-/*==========================
-  For SVG icons
-===================================================*/
-
-@font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?xmwgey');
-  src:  url('../fonts/icomoon.eot?xmwgey#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?xmwgey') format('truetype'),
-    url('../fonts/icomoon.woff?xmwgey') format('woff'),
-    url('../fonts/icomoon.svg?xmwgey#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-
-/*==========================
- header_top_area css
-===================================================*/
-#header_top_area{
-	background:#F5F5F5;
-	height:4em;
-	overflow:hidden;
-}
-
-.question_mark{
-    color: #f80707;
-    padding: 3px;
-    font-size: x-large;
-    font-weight: bold;
-}
-
-
-/*==============================
+/*====
  Navbar area
-======================================*/
-
-
+==============*/
 header{
 	position:sticky;
 	top:0; 
@@ -97,8 +42,6 @@ header{
 	z-index:1000;
 	height:64px;
 }
-
-
 
 .conteiner{
 	width:92%;
@@ -112,7 +55,6 @@ header{
 
 .logo-conteiner{
 	width: 20%;
-
 }
 
 .logo{
@@ -124,7 +66,6 @@ header{
     color: #666c6c;
     text-shadow: 0px 0px 2px #5b4a4aa3;
 }
-
 
 .nav-btn{
 	width: 80%;
@@ -167,11 +108,11 @@ header{
 	color:#69bde7;
 }
 
-
 .nav-links > ul{
 	display:flex;
 	justify-content:flex-end;
 	align-items:center;
+	padding-left: 0;
 }
 
 .nav-link {
@@ -200,14 +141,12 @@ header{
 	text-decoration:none;
 }
 
-
 .hamburger-menu-conteiner{
 	flex:1;
 	display:none;
 	align-items:center;
 	justify-content:flex-end;
 }
-
 
 .hamburger-menu{
 	width:42px;
@@ -273,18 +212,14 @@ header{
 	transform:translateY(0) rotate(-45deg);
 }
 
-
 #check:checked ~ .hamburger-menu-conteiner 
 .hamburger-menu div:after{
 	transform:translateY(0) rotate(45deg);
 }
 
-
-
-/*===================
+/*======
 for ul li animation
-==========================*/
-
+=====================*/
 @keyframes animation{
 	from{
 	    opacity:0;
@@ -298,16 +233,15 @@ for ul li animation
 	
 }
 
-/*===================
+/*======
 hero area desing
-==========================*/
+==================*/
 #hero_area{
 	width:100%;
 	height:100vh;
-	background:linear-gradient(hsla(0, 0%, 0%, 0.27), hsla(0, 0%, 0%, 0.34)), url('../img/img19.jpg') no-repeat center center;	
+	background:linear-gradient(hsla(0, 0%, 0%, 0.27), hsla(0, 0%, 0%, 0.34)), url('../img/img6.jpg') no-repeat center center;	
 	background-size:100% 100%;
 }
-
 
 .hero_info {
     width: 50%;
@@ -356,7 +290,6 @@ hero area desing
     color: #f00;
 }
 
-
 .get_btn{
     padding: .5em 3em;
     font-size: medium;
@@ -375,9 +308,12 @@ hero area desing
 	color:orange;
 }
 
-/*===================
+/*======
 service_area desing
-==========================*/
+=====================*/
+.d-grid{
+   display:grid;	
+}
 
 .service_text{
 	border: 2px solid #f0820069;
@@ -400,14 +336,12 @@ service_area desing
 	color:#FAB702!important;
 }
 
-
-/*===================
+/*========
 catagory_area desing
-==========================*/
+=========================*/
 .catagory_style{
 	background:#bdd2e694;
 }
-
 
 .catagory_img {
     width: 100%;
@@ -431,34 +365,9 @@ catagory_area desing
 	margin-top: 0;
 }
 
-/*===================
-featured_area desing
-==========================*/
-.nav_style {
-    display: flex;
-    justify-content: center;
-    place-items: center;
-	list-style:none;
-}
-
-.nav_style li{
-    cursor:pointer;
-}
-
-.nav_style li a{
-    text-decoration: none;
-    transition: 0.4s;
-}
-
-.nav_style li:hover a{
-	border-bottom: 2px solid #f6a208;
-	color:#FAB702!important;
-}
-
-
-/*===================
+/*=======
 feedback_area desing
-==========================*/
+======================*/
 .blockquote {
     padding: .5em 1em;
 }
@@ -467,70 +376,13 @@ feedback_area desing
     background: #ecf5fd;
 }
 
-
 /*=========
- Portfolio area
-======================*/
-.single_portfolio{
-	position:relative;
-}
-
-.single_portfolio_info{
-	position:absolute;
-	bottom:0;
-	left:0;
-	width:100%;
-	padding:1.5em 5px;
-	background:linear-gradient(to top, #88d7df, transparent 150px);
-	opacity:0;
-	transition:0.6s;
-	display:inline-flex;
-}
-
-.single_portfolio:hover .single_portfolio_info{
-	opacity:1;
-}
-
-
-.single_portfolio_info a{
-    margin-left: 20px;
-    font-size: medium;
-    font-weight: normal;
-    color: white;
-    background:#c8963b;
-    padding: 4px 10px;
-    border-radius: 0px;
-    height: 31px;
-    width: 36px;
-	transition:0.3s;
-}
-
-.single_portfolio_info a:hover{
-    background:#ffa600;
-}
-
-
-.single_portfolio_info h5{
-     position:relative;	
-}
-
-.portfolio_hr{
-    width: 70px;
-    height: 2px;
-    background: black;
-    overflow: hidden;
-    position: absolute;
-    bottom: 0;
-}
-
-/*=============
-Our Clients Section area
-==================================*/
+Clients Section area
+=======================*/
 .section-title {
     text-align: center;
     padding-bottom: 30px;
 }
-
 
 .section-title h2 {
     font-size: 32px;
@@ -568,11 +420,9 @@ Our Clients Section area
   transform: scale(1.1);
 }
 
-
-
-/*===================
-achieved_area desing
-==========================*/
+/*=====
+achieved_area
+================*/
 :root{
 	--primary:hsla(245, 97%, 63%, 0.65);
 	--secondary:hsla(30, 96%, 62%, 0.65);
@@ -596,9 +446,9 @@ achieved_area desing
 	font-family: oswald;
 }
 
-/*===================
-some text area desing
-==========================*/
+/*=====
+some text area
+================*/
 #some_text_area{
     background: #cee9ff;
     padding: 2em 0;
@@ -610,10 +460,9 @@ some text area desing
     padding: 1em 10px;
 }
 
-
-/*===================
-our featured_area desing
-==========================*/
+/*======
+our featured_area
+===================*/
 .single_featured_news {
     padding-bottom: 2em;
 }
@@ -630,11 +479,9 @@ our featured_area desing
 	color:#FAB702!important;
 }
 
-
-
-/*===================
-footer desing
-==========================*/
+/*==
+footer
+==========*/
 input:focus-visible{
 	outline:none;
 }
@@ -642,7 +489,6 @@ input:focus-visible{
 .footer_email_input{
     border-radius: 20px;
     border: none;
-
 }
 
 .single_footer_info h4{
@@ -664,20 +510,19 @@ input:focus-visible{
 }
 
 .social_info a{
-    width: 30px;
-    height: 25px;
-    text-align: center;
-    justify-content: center;
-    display: inline-flex;
-    place-items: center;
-    background: #d5d5d5;
-    color: black;
-    margin-left: 10px;
-    border-radius: 3px;
-	transition:0.3s;
-	text-decoration:none;
+   width: 35px;
+   height: 30px;
+   text-align: center;
+   justify-content: center;
+   display: inline-flex;
+   place-items: center;
+   background: #606060;
+   color: white;
+   margin-left: 10px;
+   border-radius: 3px;
+   transition:0.3s;
+   text-decoration:none;
 }
-
 
 .social_info a:hover{
     background: #fff;
@@ -692,11 +537,9 @@ input:focus-visible{
 	color:#f2f2f2;
 }
 
-
-/*===================
+/*===
 copyright_area
-==========================*/
-
+================*/
 #copyright_area {
     background: #c3e3ff;
 }
@@ -708,7 +551,6 @@ copyright_area
 .copyright_info_right .nav li{
 	cursor:pointer;
 	transition:0.4s;
-
 }
 
 .copyright_info_right .nav li a{
@@ -719,6 +561,3 @@ copyright_area
 .copyright_info_right .nav li:hover{
 	background:#8fcbff;
 }
-
-
-
